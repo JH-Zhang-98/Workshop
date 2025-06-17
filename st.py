@@ -8,7 +8,7 @@ length = st.sidebar.number_input("Length (m)", value=1.0, min_value=0.1, step=0.
 nx = st.sidebar.slider("Number of Spatial Points", min_value=10, max_value=200)
 # Material selection and thermal diffusivity calculation
 materials = {
-    "Aluminum": {"k": 203, "rho": 2700, "cp": 900},
+    "Aluminum": {"k": 205, "rho": 2700, "cp": 900},
     "Copper": {"k": 385, "rho": 8960, "cp": 385},
     "Steel": {"k": 45, "rho": 7850, "cp": 500},
     "Custom": None
