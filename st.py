@@ -13,6 +13,8 @@ materials = {
     "Steel": {"k": 45, "rho": 7850, "cp": 500},
     "Custom": None
 }
+
+print('fsdflsdjf')
 material = st.sidebar.selectbox("Material", list(materials.keys()))
 if material != "Custom":
     k = materials[material]["k"]
