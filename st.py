@@ -20,11 +20,11 @@ if material != "Custom":
     rho = materials[material]["rho"]
     cp = materials[material]["cp"]
     alpha = k / (rho * cp)
-    st.sidebar.write(f"Computed Thermal Diffusivity α = {alpha:.2e} m²/s")
+    st.sidebar.write(f"Computed Thermal Diffusivity alpha = {alpha:.2e} m²/s")
 else:
-    k = st.sidebar.number_input("Thermal Conductivity k (W/m·K)", value=1.0, min_value=0.0, format="%.2f")
-    rho = st.sidebar.number_input("Density ρ (kg/m³)", value=1000.0, min_value=0.0, format="%.1f")
-    cp = st.sidebar.number_input("Specific Heat cp (J/kg·K)", value=1000.0, min_value=0.0, format="%.1f")
+    k = st.sidebar.number_input("Thermal Conductivity k (W/m·K)", value=1.0, min_value=0.0)
+    rho = st.sidebar.number_input("Density alpha (kg/m³)", value=1000.0, min_value=0.0)
+    cp = st.sidebar.number_input("Specific Heat cp (J/kg·K)", value=1000.0, min_value=0.0)
     alpha = k / (rho * cp)
 dx = length / (nx - 1)
 dt = st.sidebar.number_input("Time Step (s)", value=0.01)
