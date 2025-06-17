@@ -48,6 +48,7 @@ if st.sidebar.button("Run Simulation"):
         for i in range(1, nx-1):
             T[i] = Tn[i] + stability * (Tn[i+1] - 2*Tn[i] + Tn[i-1])
         T[0] = left_temp
+        T[-1] = T[-2]  # Adiabatic right boundary: zero temperature gradient
         T_record.append(T.copy())
 
    
