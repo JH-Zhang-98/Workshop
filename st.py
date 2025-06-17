@@ -14,7 +14,6 @@ materials = {
     "Custom": None
 }
 
-print('fsdflsdjf')
 material = st.sidebar.selectbox("Material", list(materials.keys()))
 if material != "Custom":
     k = materials[material]["k"]
